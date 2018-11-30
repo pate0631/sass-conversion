@@ -17,3 +17,8 @@ font:{
         weight: 900;
     }
 }
+
+@mixin col{
+    flex-basis: 100%;
+    
+}

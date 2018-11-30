@@ -1,6 +1,7 @@
 // main SASS file
 @import "_variable.scss";
 @import "_mixin.scss"; 
+@import "_content";
 
 %message-base {
     border: 1px solid #ccc;
