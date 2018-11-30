@@ -1,24 +1,46 @@
-/************************************
-        mixin
-***********************************/
-
-@mixin font-stack($fam:arial, $size: 1rem, $weight: 600){
-font:{
-    family: $fam;
-    size: $size;
-    weight: $weight;
-}
-
-}
-@mixin fonts{
-    font:{
-        family:arial;
-        size: 2rem;
-        weight: 900;
+///************************************
+//        mixin
+//***********************************/
+//
+//@mixin font-stack($fam:arial, $size: 1rem, $weight: 600){
+//font:{
+//    family: $fam;
+//    size: $size;
+//    weight: $weight;
+//}
+//
+//}
+//@mixin fonts{
+//    font:{
+//        family:arial;
+//        size: 2rem;
+//        weight: 900;
+//    }
+//}
+//
+//@mixin col{
+//    flex-basis: 100%;
+//    
+//}
+//
+@mixin small{
+    
+    @media all and (min-width:701px) and (max-width:900px){
+        @content;
     }
 }
 
-@mixin col{
-    flex-basis: 100%;
-    
+@mixin medium{
+    @media all and (min-width:901px) and (max-width: 1400px){
+        @content;
+    } 
+}
+
+@mixin large{
+    @media all and (min-width:1401px){
+        @content;
+    }
+}
+@mixin col($size){
+    flex-basis: $size;
 }
