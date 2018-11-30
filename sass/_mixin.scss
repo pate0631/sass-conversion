@@ -1,0 +1,19 @@
+/************************************
+        mixin
+***********************************/
+
+@mixin font-stack($fam:arial, $size: 1rem, $weight: 600){
+font:{
+    family: $fam;
+    size: $size;
+    weight: $weight;
+}
+
+}
+@mixin fonts{
+    font:{
+        family:arial;
+        size: 2rem;
+        weight: 900;
+    }
+}

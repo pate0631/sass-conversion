@@ -1,18 +1,24 @@
 // main SASS file
-@import "_variable";
-@import "_mixin"; 
+@import "_variable.scss";
+@import "_mixin.scss"; 
 
-/***********************************************
-                COLOUR NOTES
-light blue  #C7F7FF
-med blue    #89C0C9
-dark blue   #3a5E63
+%message-base {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
 
-light brown #C9A689
-dark brown  #7C593C
+message{
+    @extend %message-base;
+}
 
-light grey  #d4d4d4
-dark grey   #222
+error{
+    @extend %message-base;
+    border-color:red;
+}
 
-                DEFAULTS
-***********************************************/
+warning{
+    @extend %message-base;
+    border-color: yellow;
+}
+
